@@ -1,0 +1,12 @@
+name: RedWorldSpawn
+version: '${project.version}'
+main: me.kekschen.redworldspawn.RedWorldSpawn
+api-version: 1.17
+depend: [Multiverse-Core]
+commands:
+  wspawn:
+    aliases:
+      - redworldspawn
+      - worldspawn
+    permission: rwm.redworldspawn.use
+    usage: /wspawn
