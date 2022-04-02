@@ -2,6 +2,7 @@ package me.kekschen.redworldspawn.commands;
 
 import com.onarandombox.MultiverseCore.MultiverseCore;
 import me.kekschen.redworldspawn.RedWorldSpawn;
+import me.kekschen.redworldspawn.utils.ConfigMessages;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -22,11 +23,11 @@ public class WSpawnCommand implements CommandExecutor {
 	@Override
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
 		if(sender instanceof ConsoleCommandSender) {
-			sender.sendMessage(RedWorldSpawn.PREFIX + plugin.getConfig().getString("messages.onlyPlayer"));
+			sender.sendMessage(ConfigMessages.PREFIX + ConfigMessages.getMessage(plugin, "onlyPlayer"));
 			return true;
 		}
 		if(!sender.hasPermission("rwm.redworldspawn.use")) {
-			sender.sendMessage(RedWorldSpawn.PREFIX + plugin.getConfig().getString("messages.noPermission"));
+			sender.sendMessage(ConfigMessages.PREFIX + ConfigMessages.getMessage(plugin, "noPermission"));
 			return true;
 		}
 
@@ -34,7 +35,7 @@ public class WSpawnCommand implements CommandExecutor {
 		Location spawn = multiverseCore.getMVWorldManager().getMVWorld(player.getWorld()).getSpawnLocation();
 		player.teleport(spawn);
 
-		sender.sendMessage(RedWorldSpawn.PREFIX + plugin.getConfig().getString("messages.teleported"));
+		sender.sendMessage(ConfigMessages.PREFIX + ConfigMessages.getMessage(plugin, "teleported"));
 
 		return true;
 	}

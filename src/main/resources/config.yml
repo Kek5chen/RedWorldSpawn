@@ -1,5 +1,5 @@
-prefix: "§8[§aRed§fWorldSpawn§8]§f: "
+prefix: "&8[&aRed&fWorldSpawn&8]&f: "
 messages:
-  noPermission: "§cDu hast &4keine Berechtigung §cfür diesen Befehl."
-  onlyPlayer: "§cDieser Befehl darf §4nur Ingame §causgeführt werden."
-  teleported: "Du hast dich §2zum lokalen Weltspawn §f(in der Welt, in der du dich befandest) teleportiert."
+  noPermission: "&cDu hast &4keine Berechtigung &cfür diesen Befehl."
+  onlyPlayer: "&cDieser Befehl darf &4nur Ingame &causgeführt werden."
+  teleported: "Du hast dich &2zum lokalen Weltspawn &f(in der Welt, in der du dich befandest) teleportiert."
