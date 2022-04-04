@@ -8,5 +8,3 @@ commands:
     aliases:
       - redworldspawn
       - worldspawn
-    permission: rwm.redworldspawn.use
-    usage: /wspawn
